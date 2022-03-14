@@ -77,3 +77,4 @@ According to the inferential results, it is evident that 25 females have died an
 
 ## Conclusions
 
+In conclusion, I can see that there was a dramatic difference between females dying and males dying. There were more females in the given data, although, the data shows that more males were dying than females even though they all had covid. The low p-value of 0.0012 helped conclude that there was a statistically significant difference between males and females dying. The males were dying more than twice as much as the females.
