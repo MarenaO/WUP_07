@@ -14,7 +14,10 @@ require(tidyverse)
 require(tigerstats)
 require(lubridate)
 kRdata <- read.csv(file = 'kRdata.csv')
+kRdata <- kRdata %>% mutate(across(where(is.character), as.factor))
 ```
+
+
 ### Data is from the Patient_Info dataset from South Korea 1 Jan to 1 May 
 ### This is contained in a downloadable zip file from kaggle
 
@@ -38,8 +41,13 @@ with(kRdata, table(Sex, result))
 
 ## We create two bar charts - one based on frequency and the other on percent, use ggplot commands to do this
 
-`
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
 
+```
+
+According to the barplot,I can see that there are not many people that are dying. Although, one barplot shows that of the people that are dying, it looks like more males are dying than females. This amount looks to be about twice as many males dying than females.
   
 
 
