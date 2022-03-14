@@ -67,8 +67,13 @@ According to the numerical results, 1.4% of females have died and 3% of males ha
 
 ## Inferential results 
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
-
+According to the inferential results, it is evident that 25 females have died and that 44 males have died. The p-value was 0.0012, which is a low p-value. Therefore, I can conclude that there was a significant difference between the males dying and the females dying. The Fisher test shows that the odds of dying of male vs. female is 2.3 to 1, which is a very significant difference. 
 
 ## Conclusions
 
